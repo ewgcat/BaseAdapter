@@ -1,3 +1,4 @@
 rootProject.name = "BaseAdapter"
+
 include ':app'
 include ':adapter-lib'
