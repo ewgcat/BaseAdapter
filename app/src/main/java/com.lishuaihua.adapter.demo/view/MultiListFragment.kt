@@ -11,11 +11,11 @@ import me.shouheng.uix.widget.rv.listener.DataLoadScrollListener
 import me.shouheng.utils.ktx.dp
 import me.shouheng.utils.stability.L
 import me.shouheng.vmlib.base.ViewBindingFragment
-import com.lishuaihua.adapter.createAdapter
-import com.lishuaihua.adapter.demo.R
-import com.lishuaihua.adapter.demo.databinding.FragmentListBinding
-import com.lishuaihua.adapter.viewholder.onItemChildClick
-import com.lishuaihua.adapter.viewholder.onItemClick
+import com.lishuaihua.adapterlib.createAdapter
+import com.lishuaihua.adapterlib.demo.R
+import com.lishuaihua.adapterlib.demo.databinding.FragmentListBinding
+import com.lishuaihua.adapterlib.viewholder.onItemChildClick
+import com.lishuaihua.adapterlib.viewholder.onItemClick
 import com.lishuaihua.adapter.demo.eye.HomeBean
 import com.lishuaihua.adapter.demo.eye.Item
 import com.lishuaihua.adapter.demo.vm.EyeViewModel

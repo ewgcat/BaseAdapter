@@ -1,8 +1,9 @@
 package com.lishuaihua.adapter.demo.view
 
 import android.os.Bundle
-import com.lishuaihua.adapter.demo.R
-import com.lishuaihua.adapter.demo.databinding.ActivityMainBinding
+import com.lishuaihua.adapterlib.demo.R
+import com.lishuaihua.adapterlib.demo.databinding.ActivityMainBinding
+import com.lishuaihua.adapter.demo.view.EyeFragment
 import me.shouheng.utils.ktx.onDebouncedClick
 import me.shouheng.vmlib.base.ViewBindingActivity
 import me.shouheng.vmlib.comn.ContainerActivity

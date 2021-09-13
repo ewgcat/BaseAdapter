@@ -1,4 +1,4 @@
-package com.lishuaihua.adapter.adapter;
+package com.lishuaihua.adapterlib.adapter;
 
 import android.util.SparseIntArray;
 import android.view.ViewGroup;

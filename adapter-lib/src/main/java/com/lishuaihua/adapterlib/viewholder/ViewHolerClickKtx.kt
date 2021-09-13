@@ -1,4 +1,4 @@
-package com.lishuaihua.adapter.viewholder
+package com.lishuaihua.adapterlib.viewholder
 
 import android.view.View
 import androidx.annotation.IdRes

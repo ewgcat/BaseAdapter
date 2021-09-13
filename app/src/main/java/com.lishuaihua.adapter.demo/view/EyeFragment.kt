@@ -1,23 +1,22 @@
 package com.lishuaihua.adapter.demo.view
 
 import android.os.Bundle
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.lishuaihua.adapter.createAdapter
-import com.lishuaihua.adapter.demo.R
-import com.lishuaihua.adapter.demo.databinding.FragmentListBinding
-
 import com.lishuaihua.adapter.demo.eye.HomeBean
 import com.lishuaihua.adapter.demo.eye.Item
 import com.lishuaihua.adapter.demo.vm.EyeViewModel
 import com.lishuaihua.adapter.demo.widget.loadCover
 import com.lishuaihua.adapter.demo.widget.loadRoundImage
-import com.lishuaihua.adapter.viewholder.onItemChildClick
-import com.lishuaihua.adapter.viewholder.onItemChildLongClick
-import com.lishuaihua.adapter.viewholder.onItemClick
-import com.lishuaihua.adapter.viewholder.onItemLongClick
+import com.lishuaihua.adapterlib.createAdapter
+import com.lishuaihua.adapterlib.demo.R
+import com.lishuaihua.adapterlib.demo.databinding.FragmentListBinding
+
+import com.lishuaihua.adapterlib.viewholder.onItemChildClick
+import com.lishuaihua.adapterlib.viewholder.onItemChildLongClick
+import com.lishuaihua.adapterlib.viewholder.onItemClick
+import com.lishuaihua.adapterlib.viewholder.onItemLongClick
 import me.shouheng.uix.widget.rv.listener.DataLoadScrollListener
 import me.shouheng.utils.ktx.dp2px
 import me.shouheng.vmlib.base.ViewBindingFragment

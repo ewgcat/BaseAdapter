@@ -1,11 +1,11 @@
-package com.lishuaihua.adapter.adapter
+package com.lishuaihua.adapterlib.adapter
 
 import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.lishuaihua.adapter.viewholder.AdapterViewHolderDefinition
-import com.lishuaihua.adapter.viewholder.AdapterViewHolderSetup
+import com.lishuaihua.adapterlib.viewholder.AdapterViewHolderDefinition
+import com.lishuaihua.adapterlib.viewholder.AdapterViewHolderSetup
 
 @DslMarker
 annotation class AdapterMarker
@@ -24,7 +24,7 @@ class AdapterSetup<IT, VH: BaseViewHolder> internal constructor() {
         val setup = AdapterViewHolderSetup<T, VH>()
         setup.apply(init)
         val definition = AdapterViewHolderDefinition(type, layoutId, setup)
-        definitions[type.hashCode()] = definition as AdapterViewHolderDefinition<IT, VH>
+        (definition as AdapterViewHolderDefinition<IT, VH>).also { definitions[type.hashCode()] = it }
     }
 
     /** Register click and long click events of child views for viewholder. */

@@ -1,8 +1,8 @@
-package com.lishuaihua.adapter
+package com.lishuaihua.adapterlib
 
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.lishuaihua.adapter.adapter.AdapterSetup
+import com.lishuaihua.adapterlib.adapter.AdapterSetup
 
 /** Create quick adapter. */
 fun <IT> createAdapter(

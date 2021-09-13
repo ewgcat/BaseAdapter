@@ -1,9 +1,9 @@
-package com.lishuaihua.adapter.viewholder
+package com.lishuaihua.adapterlib.viewholder
 
 import androidx.annotation.LayoutRes
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.lishuaihua.adapter.adapter.AdapterMarker
+import com.lishuaihua.adapterlib.adapter.AdapterMarker
 
 /** ViewHolder definition. */
 internal open class AdapterViewHolderDefinition<T, VH: BaseViewHolder>(

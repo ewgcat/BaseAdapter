@@ -1,9 +1,9 @@
 package com.lishuaihua.adapter.demo.vm
 
 import android.app.Application
-import me.shouheng.vmlib.base.BaseViewModel
 import com.lishuaihua.adapter.demo.eye.EyepetizerRepo
 import com.lishuaihua.adapter.demo.eye.HomeBean
+import me.shouheng.vmlib.base.BaseViewModel
 
 
 class EyeViewModel(application: Application) : BaseViewModel(application) {
