@@ -28,7 +28,7 @@ allprojects {
 
 ### 2.2 使用 Adapter 构建者方法
 
-使用 xAdapter 之后，当你需要定义一个 Adapter 的时候，你无需单独创建一个类文件，只需要通过 `createAdapter()` 方法获取一个 Adapter，
+使用 BaseAdapter 之后，当你需要定义一个 Adapter 的时候，你无需单独创建一个类文件，只需要通过 `createAdapter()` 方法获取一个 Adapter，
 
 ```kotlin
 adapter = createAdapter {
@@ -52,11 +52,11 @@ adapter = createAdapter {
 
 在这种新的调用方式中，你需要通过 `withType()` 方法指定数据类型及其对应的布局文件，然后在 `onBind()` 方法中即可实现数据到 ViewHolder 的绑定操作。这里的 `onBind()` 方法的使用与 BRVAH 中的 `convert()` 方法使用一致，可以通过阅读该库了解如何使用。总之，xAapter 在 BRVAH 的基础上做了二次封装，可以说，比简单更简单。
 
-xAdapter 支持为每个 ViewHolder 绑定点击和长按事件，同时也支持为 ViewHolder 上的某个单独的 View 添加点击和长按事件。使用方式如上所示，只需要添加 `onItemClick()` 方法并实现自己的逻辑即可。其他的点击事件可以参考项目的示例代码。
+BaseAdapter 支持为每个 ViewHolder 绑定点击和长按事件，同时也支持为 ViewHolder 上的某个单独的 View 添加点击和长按事件。使用方式如上所示，只需要添加 `onItemClick()` 方法并实现自己的逻辑即可。其他的点击事件可以参考项目的示例代码。
 
 ### 2.3 使用多类型 Adapter
 
-多类型 Adapter 的使用方式非常简单，类似于上面的调用方式，只需要在 `createAdapter()` 内再添加一个 `withType()` 方法即可。下面是一个写起来可能相当复杂的 Adapter，但是采用了 xAdpater 的调用方式之后，一切变得非常简单，
+多类型 Adapter 的使用方式非常简单，类似于上面的调用方式，只需要在 `createAdapter()` 内再添加一个 `withType()` 方法即可。下面是一个写起来可能相当复杂的 Adapter，但是采用了 BaseAdapter 的调用方式之后，一切变得非常简单，
 
 ```kotlin
 private fun createAdapter() {
