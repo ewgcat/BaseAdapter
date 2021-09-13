@@ -1,4 +1,4 @@
-package com.lishuaihua.adapterlib.demo
+package com.lishuaihua.adapter.demo
 
 import android.app.Application
 import me.shouheng.vmlib.VMLib
