@@ -1,0 +1,50 @@
+buildscript {
+    ext.kotlin_version = "1.5.0"
+    repositories {
+        google()
+        maven { url "https://www.jitpack.io" }
+        //友盟更新远程仓库
+        maven { url 'https://repo1.maven.org/maven2/' }
+        //阿里更新远程仓库
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/'}
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven { url "https://www.jitpack.io" }
+        //友盟更新远程仓库
+        maven { url 'https://repo1.maven.org/maven2/' }
+        //阿里更新远程仓库
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/'}
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+    }
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    androidUtilsVersion = '2.4.0'
+    androidVMLibVersion = '1.8.0'
+    androidUIXVersion = '1.9.0'
+    publishVersion = '1.0'
+}
